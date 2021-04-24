@@ -1,0 +1,155 @@
+@import './swiper.min.css';
+@import './all.min.css';
+@import './bootstrap.min.css';
+
+body{
+  overflow-x: hidden;
+}
+/*------------------------
+variables
+--------------------------*/
+
+/*-------------------------
+global settings
+--------------------------*/
+.main-banner{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+.banner-content{
+  padding-top: 200px ;
+  padding-bottom: 250px;
+}
+.banner-choise{
+  background-color: #E2EAED;
+  padding-left: 35px;
+  padding-right: 30px;
+}
+.feature-img,
+.auto-img,
+.ultimate-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 80px;
+  min-height: 80px;
+  height: 80px;
+  width: 80px;
+}
+.feature-img img,
+.auto-img img,
+.ultimate-img img{
+  display: block;
+  max-width: 60%;
+}
+.feature-content > div:nth-child(1) .feature-img,
+.auto-content > div:nth-child(1) .auto-img,
+.ultimate-content > div:nth-child(1) .ultimate-img{
+  background-color: rgba(255,0,0, 0.1);
+}
+.feature-content > div:nth-child(2) .feature-img,
+.auto-content > div:nth-child(2) .auto-img,
+.ultimate-content > div:nth-child(2) .ultimate-img{
+  background-color: rgba(0,0,255, 0.1);
+}
+.feature-content > div:nth-child(3) .feature-img,
+.auto-content > div:nth-child(3) .auto-img,
+.ultimate-content > div:nth-child(3) .ultimate-img{
+  background-color: rgba(0,255,0, 0.1);
+}
+.should-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  min-width: 80px;
+  height: 80px;
+  width: 80px;
+}
+.should-img img{
+  display: block;
+  max-width: 60%;
+}
+.should-content > div:nth-child(6n+1) .should-img{
+  background-color: #FFECEF;
+}
+.should-content > div:nth-child(6n+2) .should-img{
+   background-color: #EAF9FF;
+}
+.should-content > div:nth-child(6n+3) .should-img{
+   background-color: #FFF6D3;
+}
+.should-content > div:nth-child(6n+4) .should-img{
+  background-color: #E4FFEE;
+}
+.should-content > div:nth-child(6n+5) .should-img{
+ background-color: #F4F4FF;
+}
+.should-content > div:nth-child(6n) .should-img{
+   background-color: #FDEEE4;
+}
+.should-title{
+  max-width: 620px;
+}
+.ultimate-section{
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right center;
+}
+.feedback-image{
+  height: 80px;
+  width: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.feedback-nav{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.feedback-control{
+  width: 45px;
+  height: 45px;
+  color: blue;
+  background-color: #EEF3F8;
+  border: 1px solid #EEF3F8;
+}
+.feedback-control span{
+  position: relative;
+  top: -4px;
+}
+.feedback-control.swiper-button-disabled{
+  background-color: #fff;
+  color: #EEF3F8;
+}
+.download-section{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position:  right 40px;
+}
+.download-link a{
+  background-color: #000!important; 
+}
+.footer-social a{
+  color: #273043;
+  transition: color 0.3s ease; 
+}
+.footer-social a:hover{
+  color: #fff;
+}
+@media (max-width:991px){
+  .banner-content{
+    padding-top: 150px;
+    padding-bottom: 60px;
+  }
+  .main-banner{
+    background: none!important;
+  }
+  .download-section{
+    background: none!important;
+  }
+}
+
